@@ -178,6 +178,9 @@ return [
         FinxiImoveis\Providers\EventServiceProvider::class,
         FinxiImoveis\Providers\RouteServiceProvider::class,
 
+        //https://github.com/andersao/l5-repository
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
+
     ],
 
     /*
