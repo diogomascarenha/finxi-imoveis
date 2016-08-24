@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace FinxiImoveis\Http\Controllers\Auth;
 
-use App\User;
+use FinxiImoveis\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use FinxiImoveis\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller

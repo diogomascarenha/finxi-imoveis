@@ -172,11 +172,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        FinxiImoveis\Providers\AppServiceProvider::class,
+        // FinxiImoveis\Providers\BroadcastServiceProvider::class,
+        FinxiImoveis\Providers\AuthServiceProvider::class,
+        FinxiImoveis\Providers\EventServiceProvider::class,
+        FinxiImoveis\Providers\RouteServiceProvider::class,
 
     ],
 

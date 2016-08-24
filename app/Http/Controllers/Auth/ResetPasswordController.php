@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace FinxiImoveis\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
+use FinxiImoveis\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller
