@@ -64,7 +64,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => env('APP_TIMEZONE','UTC'),
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => env('APP_LOCALE','en'),
 
     /*
     |--------------------------------------------------------------------------
@@ -178,8 +178,20 @@ return [
         FinxiImoveis\Providers\EventServiceProvider::class,
         FinxiImoveis\Providers\RouteServiceProvider::class,
 
+        /*
+         * Providers da Aplicação
+         */
+        FinxiImoveis\Providers\RepositoryServiceProvider::class,
+
+
+        /*
+         * Providers de Bibliotecas Externas
+         */
         //https://github.com/andersao/l5-repository
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
+
+        //https://github.com/barryvdh/laravel-debugbar
+        Barryvdh\Debugbar\ServiceProvider::class,
 
     ],
 
@@ -227,6 +239,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        //https://github.com/barryvdh/laravel-debugbar
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
     ],
 

@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Finxi - Imóveis (Frontend)</title>
+    <title>Finxi - Imóveis (Backend)</title>
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -36,8 +36,8 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Finxi - Imóveis (Frontend)
+                <a class="navbar-brand" href="{{ route('backend.home.index') }}">
+                    Finxi - Imóveis (Backend)
                 </a>
             </div>
 

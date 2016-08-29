@@ -11,10 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+/*
+Route::post('/upload', function(){
+    $url = request()->file('imagem')->store('img/imoveis','s3');
+    $urlCompleta = Storage::disk('s3')->url($url);
+
+    var_dump($urlCompleta);
+    dd($url);
+    die();
+});
+*/
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+require base_path('routes/web.frontend.php');
+require base_path('routes/web.backend.php');
+
+
+

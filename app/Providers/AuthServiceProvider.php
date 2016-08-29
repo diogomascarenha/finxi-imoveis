@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'FinxiImoveis\Model' => 'FinxiImoveis\Policies\ModelPolicy',
+        \FinxiImoveis\Entities\Imovel::class => \FinxiImoveis\Policies\ImovelPolicy::class,
     ];
 
     /**
